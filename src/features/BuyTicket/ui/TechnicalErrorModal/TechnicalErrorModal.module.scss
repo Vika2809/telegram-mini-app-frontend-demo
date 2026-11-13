@@ -1,0 +1,38 @@
+.TechnicalErrorModal {
+    width: 100%;
+}
+
+.title {
+    @include heading-2;
+
+    text-align: center;
+}
+
+.price {
+    @include body;
+
+    text-align: center;
+    width: 100%;
+}
+
+.ticketContainer {
+    padding: 16px;
+    padding-right: 8px;
+    border-radius: 12px;
+    border: 1px solid rgb(255 255 255 / 50%);
+    background: $gray;
+}
+
+.ticketIcon {
+    opacity: 0.5;
+}
+
+.ticketText {
+    @include body;
+}
+
+.aditionalText {
+    @include body;
+
+    opacity: 0.5;
+}

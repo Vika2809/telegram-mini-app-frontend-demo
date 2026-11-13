@@ -1,0 +1,18 @@
+.Loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.activeHorse {
+    transition:
+        fill 0.5s ease-in-out,
+        fill-opacity 0.5s ease-in-out;
+}
+
+.inactiveHorse {
+    transition:
+        fill 0.3s ease-out,
+        fill-opacity 0.3s ease-out;
+}

@@ -1,0 +1,54 @@
+.MeetingHeader {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 192px;
+    border-radius: $border-radius-big;
+}
+
+.header {
+    position: relative;
+    z-index: $z-index-100; // Header поверх всех слоёв
+    padding: 4px;
+}
+
+.content {
+    position: relative;
+    z-index: $z-index-100; // Контент поверх всех слоёв
+}
+
+.location {
+    @include heading-3;
+}
+
+.prize {
+    @include heading-2;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: $z-index-1; // Картинка на слое 1
+    border-radius: $border-radius-big;
+}
+
+// Градиентный оверлей поверх картинки
+.MeetingHeader::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    @include bg-gradient-2; // Градиент переносим на оверлей
+
+    z-index: $z-index-10; // Оверлей на слое 10
+    pointer-events: none; // Чтобы не блокировать клики
+}

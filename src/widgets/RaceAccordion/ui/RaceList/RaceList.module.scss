@@ -1,0 +1,11 @@
+.RaceList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0 8px;
+    height: calc(100vh - 240px);
+    min-height: 0;
+    overflow-y: auto;
+    touch-action: pan-y;
+}

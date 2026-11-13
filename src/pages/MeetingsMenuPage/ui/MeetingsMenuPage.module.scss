@@ -1,0 +1,36 @@
+.MeetingsMenuPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    @include heading-2;
+}
+
+.main {
+    position: relative;
+    padding-bottom: 72px;
+}
+
+.community_invite {
+    width: fit-content;
+}
+
+.buttons {
+    max-width: $width-container-android;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: $z-index-100;
+    padding: 16px 8px;
+}

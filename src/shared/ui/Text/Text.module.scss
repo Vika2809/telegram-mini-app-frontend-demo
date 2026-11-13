@@ -1,0 +1,55 @@
+.text {
+    color: $white;
+}
+
+.error {
+    .text {
+        color: $red;
+    }
+}
+
+.caps {
+    .text {
+        text-transform: uppercase;
+    }
+}
+
+.contrast {
+    .text {
+        color: $white;
+    }
+}
+
+.red {
+    .text {
+        color: $red;
+    }
+}
+
+.black {
+    .text {
+        color: $bg;
+    }
+}
+
+// sizes
+
+.large {
+    @include heading-1;
+}
+
+.mini-large {
+    @include heading-3;
+}
+
+.body {
+    @include body;
+}
+
+.mini {
+    @include footnote;
+}
+
+.large-caps {
+    @include heading-2;
+}

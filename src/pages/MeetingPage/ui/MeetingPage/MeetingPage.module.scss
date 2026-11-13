@@ -1,0 +1,28 @@
+.MeetingPage {
+    width: 100%;
+}
+
+.description {
+    @include body;
+
+    opacity: 0.5;
+}
+
+.buttons {
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.title {
+    @include body;
+
+    opacity: 0.5;
+}
+
+.note {
+    color: $green;
+
+    &:visited {
+        color: $green;
+    }
+}

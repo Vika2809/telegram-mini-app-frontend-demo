@@ -1,0 +1,29 @@
+.UserCounter {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.counter {
+    @include bg-gradient-1;
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px;
+    padding-right: 8px;
+    border-radius: 12px;
+}
+
+.count {
+    @include footnote;
+
+    color: $white;
+}
+
+.text {
+    @include footnote;
+
+    color: $white;
+    opacity: 0.5;
+}

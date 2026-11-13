@@ -1,0 +1,74 @@
+@use './variables' as *;
+
+@mixin heading-1 {
+    font-family: $font-stack;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 90%;
+}
+
+@mixin heading-2 {
+    font-family: $font-stack;
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 100%;
+}
+
+@mixin heading-3 {
+    font-family: $font-stack;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 135%;
+}
+
+@mixin body {
+    font-family: $font-stack;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 135%;
+}
+
+@mixin footnote {
+    font-family: $font-stack;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 135%;
+}
+
+@mixin button {
+    font-family: $font-stack;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@mixin button-small {
+    font-family: $font-stack;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+@mixin link {
+    font-family: $font-stack;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration-line: underline;
+}
+
+// Gradients
+
+@mixin bg-gradient-1 {
+    background:
+        linear-gradient(0deg, rgb(0 0 0 / 20%) 0%, rgb(0 0 0 / 20%) 100%),
+        linear-gradient(0deg, rgb(255 255 255 / 10%) 0%, rgb(255 255 255 / 10%) 100%);
+    backdrop-filter: blur(40px);
+}
+
+@mixin bg-gradient-2 {
+    background: linear-gradient(0deg, #1b1b1b 16.02%, rgb(27 27 27 / 0%) 100%);
+}
+
+// Shadows
+
+@mixin shadow-green {
+    box-shadow: 0 0 8px 0 rgb(92 190 9 / 70%);
+}

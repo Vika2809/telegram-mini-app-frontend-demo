@@ -1,0 +1,20 @@
+.ConfirmPaymentModal {
+    width: 100%;
+}
+
+.title {
+    @include heading-2;
+
+    text-align: center;
+}
+
+.price {
+    @include body;
+
+    text-align: center;
+    width: 100%;
+
+    span {
+        @include button;
+    }
+}

@@ -1,0 +1,9 @@
+.primary {
+    @include link;
+
+    opacity: 0.5;
+}
+
+.maxWidth {
+    width: 100%;
+}

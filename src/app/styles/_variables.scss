@@ -1,0 +1,41 @@
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap';
+
+// Шрифты
+$font-stack: 'Montserrat', sans-serif;
+
+// Цвета
+
+// Functional
+$bg: #1b1b1b; // MiniApp/BG
+$bg-card: #282828; // MiniApp/BG card
+$gray: #464646; // MiniApp/Gray
+$green: #5cbe09; // MiniApp/Green
+$green-card: #212b19; // MiniApp/Green Card
+$red: #ea0000; // MiniApp/Red
+$red-card: #2b0f0f; // MiniApp/Red Card
+$gradient: linear-gradient(180deg, #0f6f41 0%, #65c802 100%); // MiniApp/Gradient
+$white: #fff;
+
+// Тени
+$shadow-green: 0px 4px 5px 0px #0c7442; // не актуально
+$shadow-red: 0px 4px 5px 0px #8b1212; // не актуально
+
+// Размеры контейнеров
+$width-container-android: 425px;
+$width-container-ios: 320px;
+
+// Скругления для крупных форм
+$border-radius-round: 1000px;
+$border-radius-100px: 100px;
+$border-radius-big: 12px;
+$border-radius-small: 6px;
+
+// z-index
+$z-index-negative-1: -1;
+$z-index-negative-10: -10;
+$z-index-1: 1;
+$z-index-10: 10;
+$z-index-100: 100;
+$z-index-1000: 1000;
+$z-index-10000: 10000;
+$z-index-100000: 100000;

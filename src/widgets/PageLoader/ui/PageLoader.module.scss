@@ -1,0 +1,50 @@
+.PageLoader {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('@/shared/assets/images/load_main_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &::before {
+        content: url('@/shared/assets/images/load_grime.png');
+        position: absolute;
+        bottom: -215px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 454px;
+        height: 568px;
+        z-index: 1;
+        animation: slide-left 20s ease-in-out infinite;
+        pointer-events: none;
+    }
+}
+
+.title {
+    @include heading-1;
+
+    color: $white;
+    text-align: left;
+
+    span {
+        color: $green;
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    50% {
+        transform: translateX(-58%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}

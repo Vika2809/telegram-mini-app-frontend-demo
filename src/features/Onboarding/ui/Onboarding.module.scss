@@ -1,0 +1,291 @@
+.onboarding {
+    justify-content: flex-end;
+}
+
+.content {
+    background: $bg;
+    transition: 0.3s transform;
+    max-width: $width-container-android;
+    width: 100%;
+    position: relative;
+    height: 520px;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 24px;
+    position: relative;
+    border-radius: 24px 24px 0 0;
+    overflow: hidden;
+}
+
+.imgMoney1 {
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+
+.imgMoney2 {
+    position: absolute;
+    right: -40px;
+    top: 135px;
+}
+
+.imgMoney3 {
+    position: absolute;
+    left: 0;
+    top: 150px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    padding: 24px 16px;
+    position: absolute;
+    z-index: 10;
+}
+
+.headerCenter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    @include footnote;
+    padding: 4px 8px;
+    background: #ffffff1a;
+    border-radius: 12px;
+}
+
+.headerRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.skipButton {
+    @include button-small;
+    color: $green;
+    cursor: pointer;
+}
+
+.slideHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    margin-top: 72px;
+}
+
+.slideTitle {
+    text-align: center;
+    @include heading-2;
+}
+
+.slideText {
+    text-align: center;
+    @include body;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 0 8px;
+}
+
+.slideMain {
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    margin-top: 16px;
+    position: relative;
+}
+
+.slideInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    gap: 8px;
+}
+
+.slideInfoImg {
+    width: 304px;
+}
+
+.bg {
+    background: linear-gradient(180deg, rgba(27, 27, 27, 0) 35.42%, #1b1b1b 69.82%);
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.button {
+    width: 100%;
+}
+
+.slideHeaderWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+    p {
+        @include body;
+    }
+}
+
+.slideHeaderImage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.slideInfoItem {
+    width: 100%;
+    padding: 16px 16px;
+    padding-left: 24px;
+    background: #282828;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.slideInfoItemMain {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.text {
+    @include footnote;
+    opacity: 0.4;
+}
+
+.slideInfoTitle {
+    @include heading-3;
+}
+
+.greenBg {
+    background: #212b19;
+}
+
+.slideInfoItemButton {
+    button {
+        padding: 12px;
+        height: 40px;
+        width: 87px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+
+        .buttonText {
+            font-size: 12px;
+            font-weight: 700;
+            color: $green;
+        }
+
+        .buttonImg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .buttonImg svg {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            color: $green;
+        }
+    }
+
+    &.buttonBg {
+        button {
+            background: none;
+        }
+    }
+}
+
+.slideInfoImage {
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.paddingLeft {
+    padding-left: 36px;
+}
+
+.slide {
+    overflow: hidden;
+}
+
+.slideImage {
+    width: 100%;
+    height: 215px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    margin: 0 auto;
+
+    img {
+        border-radius: 12px;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.lastSlideHeader {
+    margin-top: 16px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+:global {
+    .swiper-pagination {
+        bottom: 36px !important;
+
+        .swiper-pagination-bullet {
+            background: #ffffff33 !important;
+            width: 8px;
+            height: 8px;
+            opacity: 1;
+
+            &-active {
+                background: white !important;
+            }
+        }
+    }
+}

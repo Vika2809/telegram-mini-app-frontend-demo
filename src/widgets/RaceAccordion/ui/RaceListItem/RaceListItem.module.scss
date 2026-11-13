@@ -1,0 +1,80 @@
+.RaceListItem {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px 24px 16px;
+    border-radius: $border-radius-big;
+    background: $bg-card;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    @include heading-3;
+}
+
+.statusText {
+    @include footnote;
+
+    text-transform: capitalize;
+}
+
+.additionalText {
+    @include footnote;
+
+    opacity: 0.5;
+}
+
+.distance {
+    @include body;
+}
+
+.open {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+.close {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition:
+        max-height 0.3s ease,
+        opacity 0.3s ease,
+        padding 0.3s ease;
+    padding: 0;
+}
+
+.contentOpen {
+    max-height: 500px;
+    opacity: 1;
+    padding: 16px 0 0;
+}
+
+.contentItemValue {
+    @include body;
+}
+
+.status {
+    padding: 2px 8px;
+    border-radius: $border-radius-100px;
+    background: $gray;
+}
+
+.statusIcon {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $white;
+    opacity: 0.2;
+}

@@ -1,0 +1,1 @@
+export { getMeetingImage } from './getMeetingImage';

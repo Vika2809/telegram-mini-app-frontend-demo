@@ -1,0 +1,18 @@
+.TimeChip {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    @include bg-gradient-1;
+
+    padding: 4px;
+    padding-right: 8px;
+    border-radius: 12px;
+    width: fit-content;
+}
+
+.time {
+    @include footnote;
+
+    color: $white;
+}
